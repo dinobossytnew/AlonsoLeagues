@@ -8,102 +8,97 @@
 #
 
 Messages:
-  No-permission: "&cYou don't have permission to do this."
-  Reloaded: "&aSome messages and options have been reloaded. Other may require a restart!"
-  Invalid-player: "&cPlayer is not online!"
-  Invalid-amount: "&cInvalid amount was provided!"
-  Invalid-league: "&cLeague is not valid!"
-  Please-reconnect: "&cSomething went wrong. Please reconnect to the server!"
-  Please-reconnect-other: "&cThe player is not registered. {PLAYER} must reconnect to the server!"
-  You-received: " &8+&d{POINTS} Point(s)!"
-  You-lost: " &8-&d{POINTS} Point(s)!"
-  You-added-to-target: "&aYou added {POINTS} point(s) to {TARGET}!"
-  You-removed-from-target: "&aYou removed {POINTS} point(s) from {TARGET}!"
-  Target-not-registered: "&cTarget is not registered!"
+  No-permission: "&cNo tienes permiso para hacer esto."
+  Reloaded: "&aAlgunos mensajes y opciones han sido recargados. ¡Otros pueden requerir un reinicio!"
+  Invalid-player: "&c¡El jugador no está en línea!"
+  Invalid-amount: "&c¡Se proporcionó una cantidad inválida!"
+  Invalid-league: "&c¡La liga no es válida!"
+  Please-reconnect: "&cAlgo salió mal. ¡Por favor, reconéctate al servidor!"
+  Please-reconnect-other: "&cEl jugador no está registrado. {PLAYER} debe reconectarse al servidor."
+  You-received: " &8+&d¡{POINTS} punto(s)!"
+  You-lost: " &8-&d¡{POINTS} punto(s)!"
+  You-added-to-target: "&aHas agregado {POINTS} punto(s) a {TARGET}!"
+  You-removed-from-target: "&aHas eliminado {POINTS} punto(s) de {TARGET}!"
+  Target-not-registered: "&c¡El objetivo no está registrado!"
   Keys:
     Progress-bar:
       Amount: 15
       Character: "■"
-      #Use Complete in case you WANT to replace the default rank color. Recommended to leave it like ""
-      Complete: "" #Example: "&c"
+      Complete: ""
       Remaining: "&7"
     Progress:
       Format: "&a{LEAGUE_POINTS}&7/&b{REQUIRED_POINTS}"
-      Max-league: "&c&lMAX LEAGUE"
+      Max-league: "&c&lMÁXIMA LIGA"
   Add-points:
-    Cannot-add-zero: "&cCannot add zero points."
-    Error: "&cCouldn't add points to player!"
+    Cannot-add-zero: "&cNo se pueden agregar cero puntos."
+    Error: "&c¡No se pudieron agregar puntos al jugador!"
   Remove-points:
-    Cannot-remove-zero: "&cCannot add zero points."
-    Error: "&cCouldn't remove points to player!"
+    Cannot-remove-zero: "&cNo se pueden eliminar cero puntos."
+    Error: "&c¡No se pudieron eliminar puntos del jugador!"
   Set-points:
-    You-set-points: "&aYou set {TARGET}'s points to {POINTS}!"
+    You-set-points: "&aHas establecido los puntos de {TARGET} en {POINTS}!"
   Reset:
-    You-reset-data: "&aYou reset {TARGET}'s data!"
+    You-reset-data: "&aHas restablecido los datos de {TARGET}!"
   Set:
-    Set-league: "&aYou set {TARGET}'s league to {LEAGUE}!"
+    Set-league: "&aHas establecido la liga de {TARGET} a {LEAGUE}!"
   Help:
     Admin:
-    - "&6 /alonsoleagues stats <player> &f- &eCheck statistics of a players"
-    - "&6 /alonsoleagues addpoints <player> <points> <hide-output> &f- &eAdd points to player"
-    - "&6 /alonsoleagues addrandompoints <player> <min> <max> <hide-output> &f- &eAdd random points to player"
-    - "&6 /alonsoleagues removepoints <player> <points> <hide-ouput> &f- &eRemove points from player"
-    - "&6 /alonsoleagues setpoints <player> <points> <hide-ouput> &f- &eRemove points from player"
-    - "&6 /alonsoleagues setleague <player> <league-identifier> <hide-ouput> &f- &eSet league for player"
-    - "&6 /alonsoleagues resetdata <player> <hide-ouput> &f- &eReset data for player (Console only)"
-    - "&6 /alonsoleagues reload &f- &eReload configuration (Restart recommended)"
+    - "&6 /alonsoleagues stats <jugador> &f- &eVer estadísticas de un jugador"
+    - "&6 /alonsoleagues addpoints <jugador> <puntos> <ocultar-salida> &f- &eAgregar puntos a un jugador"
+    - "&6 /alonsoleagues addrandompoints <jugador> <min> <max> <ocultar-salida> &f- &eAgregar puntos aleatorios a un jugador"
+    - "&6 /alonsoleagues removepoints <jugador> <puntos> <ocultar-salida> &f- &eEliminar puntos de un jugador"
+    - "&6 /alonsoleagues setpoints <jugador> <puntos> <ocultar-salida> &f- &eEstablecer puntos de un jugador"
+    - "&6 /alonsoleagues setleague <jugador> <identificador-liga> <ocultar-salida> &f- &eEstablecer la liga para un jugador"
+    - "&6 /alonsoleagues resetdata <jugador> <ocultar-salida> &f- &eRestablecer datos de un jugador (solo consola)"
+    - "&6 /alonsoleagues reload &f- &eRecargar configuración (se recomienda reiniciar)"
     User:
-    - "&6 /alonsoleagues stats <player> &f- &eCheck statistics of a players"
+    - "&6 /alonsoleagues stats <jugador> &f- &eVer estadísticas de un jugador"
   Stats:
-    #Supports PlaceholderAPI if available.
     Self:
-    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
-    - "                &aYour statistics!"
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
+    - "                &a¡Tus estadísticas!"
     - "&a "
-    - "  &7Current league: &a{LEAGUE}"
-    - "  &7Next league: &a{NEXT_LEAGUE}"
-    - "  &7Progress: &b{PROGRESS} &3{PERCENT}%"
+    - "  &7Liga actual: &a{LEAGUE}"
+    - "  &7Próxima liga: &a{NEXT_LEAGUE}"
+    - "  &7Progreso: &b{PROGRESS} &3{PERCENT}%"
     - "&b "
-    - "  &7Current league points: &a{LEAGUE_POINTS}"
-    - "  &7Points to rank up: &a{REQUIRED_POINTS}"
-    - "  &7Current total points: &a{TOTAL_POINTS}"
-    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
-    #Supports PlaceholderAPI if available.
+    - "  &7Puntos de liga actuales: &a{LEAGUE_POINTS}"
+    - "  &7Puntos para ascender: &a{REQUIRED_POINTS}"
+    - "  &7Puntos totales actuales: &a{TOTAL_POINTS}"
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
     Self-max-league:
     - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
-    - "           &aYour statistics!"
-    - "             &c&lMAX LEAGUE!"
-    - "  &7Current league: &a{LEAGUE}&r"
-    - "  &7Actual points: &a{TOTAL_POINTS}"
+    - "           &a¡Tus estadísticas!"
+    - "             &c&l¡MÁXIMA LIGA!"
+    - "  &7Liga actual: &a{LEAGUE}&r"
+    - "  &7Puntos actuales: &a{TOTAL_POINTS}"
     - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
-    #Supports PlaceholderAPI if available.
     Other:
     - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
-    - "          &a{PLAYER}'s statistics"
+    - "          &aEstadísticas de {PLAYER}"
     - "&a "
-    - "  &7Current league: &a{LEAGUE}"
-    - "  &7Next league: &a{NEXT_LEAGUE}"
-    - "  &7Progress: &b{PROGRESS} &3{PERCENT}%"
+    - "  &7Liga actual: &a{LEAGUE}"
+    - "  &7Próxima liga: &a{NEXT_LEAGUE}"
+    - "  &7Progreso: &b{PROGRESS} &3{PERCENT}%"
     - "&b "
-    - "  &7Current league points: &a{LEAGUE_POINTS}"
-    - "  &7Points to rank up: &a{REQUIRED_POINTS}"
-    - "  &7Current total points: &a{TOTAL_POINTS}"
-    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
-    #Supports PlaceholderAPI if available.
+    - "  &7Puntos de liga actuales: &a{LEAGUE_POINTS}"
+    - "  &7Puntos para ascender: &a{REQUIRED_POINTS}"
+    - "  &7Puntos totales actuales: &a{TOTAL_POINTS}"
+    - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
     Other-max-league:
     - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
-    - "      &a{PLAYER}'s statistics"
-    - "            &c&lMAX LEAGUE!"
-    - "  &7Current league: &a{LEAGUE}&r"
-    - "  &7Actual points: &a{TOTAL_POINTS}"
+    - "      &aEstadísticas de {PLAYER}"
+    - "            &c&l¡MÁXIMA LIGA!"
+    - "  &7Liga actual: &a{LEAGUE}&r"
+    - "  &7Puntos actuales: &a{TOTAL_POINTS}"
     - "{COLOR}&l▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬&r"
   Leaderboards:
     League:
       Placeholders:
         Entry: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
-        No-data: "&7No data available"
-        No-name: "&7Unknown"
-        No-score: "&7Unknown"
+        No-data: "&7No hay datos disponibles"
+        No-name: "&7Desconocido"
+        No-score: "&7Desconocido"
       Signs:
         Score:
         - "&c--&e #{RANKING} &c--"
@@ -112,15 +107,15 @@ Messages:
         - "&c-------------"
         Empty:
         - "&c--&e #{RANKING} &c--"
-        - "&cNo player"
-        - "&bUnknown"
+        - "&cNingún jugador"
+        - "&bDesconocido"
         - "&c-------------"
     Points:
       Placeholders:
         Entry: "&e{RANKING}. &b{PLAYER} &7- &e{SCORE}"
-        No-data: "&7No data available"
-        No-name: "&7Unknown"
-        No-score: "&7Unknown"
+        No-data: "&7No hay datos disponibles"
+        No-name: "&7Desconocido"
+        No-score: "&7Desconocido"
       Signs:
         Score:
         - "&c--&e #{RANKING} &c--"
@@ -129,8 +124,8 @@ Messages:
         - "&c-------------"
         Empty:
         - "&c--&e #{RANKING} &c--"
-        - "&cNo player"
-        - "&bUnknown"
+        - "&cNingún jugador"
+        - "&bDesconocido"
         - "&c-------------"
 
 Permissions:
